@@ -1,0 +1,123 @@
+:root {
+  --border: 1px solid #707070;
+  --border-radius: 5px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+.container {
+  margin: 0 auto;
+  width: calc(100vw - 200px);
+  max-width: 1050px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  text-align: center;
+}
+
+h1.name {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.game-instruction {
+  padding: 15px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+.game-instruction span {
+  padding: 5px;
+  background: rgb(49, 47, 47);
+  border-radius: var(--border-radius);
+  color: rgb(255, 255, 255);
+}
+.game-pallete {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.player {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 15px;
+}
+.player-name {
+  border: var(--border);
+  padding: 5px 50px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  margin: 2px;
+  outline: none;
+}
+.btn.selected {
+  border: 2px solid blue;
+}
+
+.prev-results {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.prev-results div {
+  display: flex;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 10px;
+}
+.prev-results div span {
+  margin-right: 20px;
+}
+
+.message {
+  /* display: none; */
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-size: 1.3rem;
+}
+.message.success {
+  border: aqua solid 1px;
+  color: aqua;
+  display: block;
+}
+
+.message.error {
+  border: rgb(196, 39, 39) solid 1px;
+  color: rgb(196, 39, 39);
+  display: block;
+}
+
+.btn-play {
+  background: blue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  outline: none;
+}
+
+.btn-reset {
+  outline: none;
+  border: none;
+  background: #707070;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}

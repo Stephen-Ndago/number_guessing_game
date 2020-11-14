@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./dev-data/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>guessgame.io</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Game section -->
+      <div class="game-container">
+        <h1 class="name">Number Guessing Game</h1>
+        <p class="game-instruction" id="game-instructions">
+          Select <span id="guess-count">3</span> numbers between
+          <span id="min">1</span> and <span id="max">10</span> in the player
+          pallette
+        </p>
+        <div class="game-pallete">
+          <div class="player player-1" id="player-pallete">
+            <h3 class="player-name" id="player">Player-1</h3>
+            <!-- <button class="btn">n</button> -->
+          </div>
+          <div class="player player-2" id="com-pallete">
+            <h3 class="player-name" id="complayer">Player-2</h3>
+            <!-- <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button> -->
+          </div>
+        </div>
+        <div class="prev-results">
+          <div id="ppr">
+            <span>YPR</span>
+            <p id="ppr">--No results yet--</p>
+          </div>
+          <div id="cpr">
+            <span>CPR</span>
+            <p id="cpr">--No results yet--</p>
+          </div>
+        </div>
+        <div id="message"></div>
+        <button class="btn btn-play" id="play-btn">Play</button>
+        <button class="btn btn-reset">Reset</button>
+      </div>
+      <!-- Results Section -->
+      <div class="results-container" hidden>
+        <div class="message" id="final-message">You Won</div>
+        <div class="description" id="decription">
+          <span>DESCRIPTION:</span>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+            rerum officiis ducimus reiciendis qui nisi quos consequatur sunt
+            fuga illo!
+          </p>
+        </div>
+      </div>
+      <!-- Settings Section -->
+      <div class="settings-container" hidden>
+        <div class="game-instructions">
+          <h3>How To Play</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, fuga in. Sed accusantium nihil voluptatem nulla autem
+            reiciendis, magnam neque.
+          </p>
+        </div>
+        <div class="difficulty">
+          <select name="difficulty" id="difficulty">
+            <option value="easy" selected>Easy</option>
+            <option value="normal">Normal</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
